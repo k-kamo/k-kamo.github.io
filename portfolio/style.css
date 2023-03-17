@@ -9,10 +9,22 @@ body{
 }
 
 header{
-	background-color: lightgray;
-	display: flex;
 	justify-content: space-between;
-	padding: 20px 16px;
+	padding: 2px 16px 0;
+	width: 800px;
+	margin: 0 auto;
+}
+header h1{
+	float: left;
+}
+header nav{
+	margin-top: 14px;
+	float: right;
+}
+header::after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
 header nav ul{
@@ -23,6 +35,24 @@ header nav ul{
 	list-style-type: none;
 }
 header nav ul li{
-	margin-right: 20px;
+	padding: 0 10px;
+	border-right: 1px solid #ccc;
+}
+header nav ul li:last-of-type{
+	border-right: none;
+}
+header nav ul li a{
+	text-decoration: none;
+	color: #333;
+}
+header nav ul li a:hover{
+	text-decoration: underline;
+	background: #eee;
 }
 
+#hero{
+	background: #ccc;
+	width: 800px;
+	height: 340px;
+	margin: 0 auto;
+}
