@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+}
+
+header{
+	background-color: lightgray;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 16px;
+}
+
+header nav ul{
+	display: flex;
+}
+
+header nav ul{
+	list-style-type: none;
+}
+header nav ul li{
+	margin-right: 20px;
+}
+
