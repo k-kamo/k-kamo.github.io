@@ -16,12 +16,20 @@ main section{
 	max-width: 940px;
 	height: 340px;
 }
-
-footer{
-	padding: 10px 0 16px;
-	background: #444;
-	color: #fff;
-	text-align: center;
+#cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-
-
+.card{
+	padding: 10px;
+	width: 340px;
+	height: 180px;
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	box-shadow: 0 0 4px rgba(0,0,0,.2);
+	margin: 0 auto 28px;
+}
+.more{
+	text-align: right;
+}

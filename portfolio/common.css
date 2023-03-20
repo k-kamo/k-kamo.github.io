@@ -55,9 +55,20 @@ header nav ul li a{
 	color: #333;
 }
 header nav ul li a:hover{
-	border-bottom: 3px dotted #888;
-	background: #eee;
+	border-bottom: 3px dotted #ccc;
 }
+
+
+
+footer{
+	margin-top: 20px;
+	padding: 10px 0 16px;
+	background: #444;
+	color: #fff;
+	text-align: center;
+}
+
+/** smart phone site **/
 
 #hamburger{
 	display: none;
@@ -102,3 +113,4 @@ header nav ul li a:hover{
 		transform: translateY(-100%);
 	}
 }
+

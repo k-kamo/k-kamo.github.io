@@ -1,2 +1,28 @@
 @charset "utf-8";
 
+header{
+	margin-bottom: 24px;
+}
+
+main, #breadcrumbs{
+	width: 92%;
+	max-width: 940px;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+
+main section{
+	margin-bottom: 30px;
+}
+
+section h2{
+	border-bottom: 1px solid #222;
+	margin-bottom: 6px;
+}
+section h3{
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+
+
