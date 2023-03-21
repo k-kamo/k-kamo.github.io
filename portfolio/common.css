@@ -75,6 +75,10 @@ footer{
 }
 
 @media screen and (max-width:565px){
+	html{
+		font-size: 14px;
+		line-height: 1.4em;
+	}
 	header{
 		margin-bottom: 8px;
 	}

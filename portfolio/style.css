@@ -4,11 +4,11 @@ main{
 	width: 92%;
 	max-width: 940px;
 	margin: 0 auto;
-	margin-bottom: 200px;
+	margin-bottom: 60px;
 }
 
 main section{
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 #hero{
@@ -33,3 +33,19 @@ main section{
 .more{
 	text-align: right;
 }
+
+#map iframe{
+	width: 100%;
+	height: 300px;
+}
+
+#SNS ul{
+	list-style-type: none;
+	text-align: center;
+}
+#SNS ul li{
+	display: inline-block;
+}
+
+
+
