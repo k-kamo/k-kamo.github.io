@@ -3,6 +3,8 @@
 *{
 	margin: 0;
 	padding: 0;
+	color: #333;
+	box-sizing: border-box;
 }
 
 body{
@@ -58,8 +60,6 @@ header nav ul li a:hover{
 	border-bottom: 3px dotted #ccc;
 }
 
-
-
 footer{
 	margin-top: 20px;
 	padding: 10px 0 16px;
@@ -74,16 +74,19 @@ footer{
 	display: none;
 }
 
-@media screen and (max-width:565px){
+@media screen and (max-width:600px){
 	html{
 		font-size: 14px;
-		line-height: 1.4em;
+		line-height: 1.6em;
 	}
 	header{
 		margin-bottom: 8px;
 	}
 	header nav{
 		display: none;
+	}
+	p{
+		margin-bottom: .5em;
 	}
 
 	#hamburger{
