@@ -84,6 +84,41 @@ footer{
 	color: #fff;
 	text-align: center;
 }
+/*** return to page Top button ****/
+.pagetop{
+	width: 45px;
+	height: 45px;
+	position: fixed;
+	right: 10px;
+	bottom: 30px;
+	background: rgba(155,155,155,.4);
+	border-radius: 50%;
+	text-align: center;
+	line-height: 36px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #777;
+}
+.pagetop:hover{
+	background: rgba(155,155,155.7);
+}
+.pagetop::before{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	top: 11px;
+	left: 16px;
+	border-top: 3px solid rgba(55,55,55,.5);
+	border-right: 3px solid rgba(55,55,55,.5);
+	transform: rotate(-45deg);
+	color: #555;
+}
+
+
+
+
 
 /** smart phone site **/
 #h-menu{
