@@ -68,8 +68,7 @@ footer{
 }
 
 /** smart phone site **/
-
-#hamburger{
+#h-menu{
 	display: none;
 }
 
@@ -88,35 +87,106 @@ footer{
 		margin-bottom: .5em;
 	}
 
-	#hamburger{
+	/*** hamburger menu ******/
+	#h-menu{
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 80%;
+		z-index: 99;
 		display: block;
-		margin: 10px 0 4px;
-		background: #fff;
-		float: right;
-		width: 42px;
-		height: 30px;
-		position: relative;
-		font-size: 14px;
+	}
+	#h-menu .modal{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(30,30,30,.8);
+		display: none;
+	}
+	#h-menu label{
+		cursor: pointer;
+		position: absolute;
+		right: 12px;
+		top: 12px;
+		padding-top: 5px;
+		height: 12px;
+		font-size: 12px;
 		font-weight: bold;
 	}
-	#hamburger span{
+	#h-menu label span{
+		background: #777;
 		display: block;
-		width: 100%;
-		height: 4px;
-		position: absolute;
-		left: 0;
-		background: #000;
+		height: 3px;
+		width: 30px;
+		position: relative;
+		transition: background .4s ease-out;	
 	}
-	#hamburger :nth-child(1){
+	#h-menu label div{
+		position: absolute;
+		top: 17px;
+		right: -4px;
+	}
+	#h-menu label span::before,
+	#h-menu label span::after{
+		background: #777;
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		transition: all .4s ease-out;
+		width: 100%;
+	}
+	#h-menu label span::before{ top: 8px; }
+	#h-menu label span::after{ top: -8px; }
+
+	#h-menu ul{
+		background-color: rgba(220,220,220,.9);
+		overflow: hidden;
+		max-height: 0;
+		transition: max-height .6s;
+		text-align: center;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	#h-menu ul li:first-of-type{
+		padding-top: 50px;
+	}
+	#h-menu ul li a{
+		display: block;
+		padding: 24px 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+		border-bottom: 1px solid #888;
+		font-weight: bold;
+		color: black;
+	}
+	#h-menu ul li:last-child a{
+		border-bottom: none;
+	}
+	#h-menu ul li a:hover{
+		background-color: #f4f4f4;
+	}
+	#h-menu input{
+		display: none;
+	}
+	#h-menu input:checked~ .modal{
+		display: block;
+	}
+	#h-menu input:checked~ ul{
+		max-height: 338px;
+		transition: max-height .6s;
+	}
+	#h-menu input:checked~ label span{
+		background: transparent;
+	}
+	#h-menu input:checked~ label span::before{
+		transform: rotate(-45deg);
 		top: 0;
 	}
-	#hamburger :nth-child(2){
-		top: 40%;
-		transform: translateY(-50%);
-	}
-	#hamburger :nth-child(3){
-		top: 80%;
-		transform: translateY(-100%);
+	#h-menu input:checked~ label span::after{
+		transform: rotate(45deg);
+		top: 0;
 	}
 }
 
