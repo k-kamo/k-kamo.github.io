@@ -1,7 +1,7 @@
 $(function(){
 	$('.pagetop').hide();
 	$(window).scroll(function(){
-		if($(this).scrollTop() > 120){
+		if($(this).scrollTop() > 160){
 			$('.pagetop').fadeIn();
 		}else{
 			$('.pagetop').fadeOut();
