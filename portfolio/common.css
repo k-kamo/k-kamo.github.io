@@ -59,6 +59,24 @@ header nav ul li a:hover{
 	border-bottom: 3px dotted #ccc;
 }
 
+#info dl{
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+#info dt, #info dd{
+	border-bottom: 1px dotted #ddd;
+	margin-bottom: 10px;
+}
+#info dt{
+	flex-basis: 25%;
+}
+#info dd{
+	flex-basis: 75%;
+}
+
+
+
 footer{
 	margin-top: 20px;
 	padding: 10px 0 16px;
