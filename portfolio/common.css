@@ -124,7 +124,7 @@ footer{
 	#h-menu label div{
 		position: absolute;
 		top: 17px;
-		right: -4px;
+		right: -3px;
 	}
 	#h-menu label span::before,
 	#h-menu label span::after{
