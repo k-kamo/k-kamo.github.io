@@ -16,7 +16,6 @@ section h2{
 }
 
 #hero{
-	background: #ccc;
 	max-width: 940px;
 	height: 340px;
 	position: relative;
@@ -47,8 +46,8 @@ section h2{
 		right: 4px;
 	}
 	#hero p:last-child{
-		bottom: -4px;
-		right: 4px;
+		bottom: -6px;
+		right: 6px;
 	}
 }
 

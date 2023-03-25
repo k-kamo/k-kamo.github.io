@@ -15,4 +15,16 @@ $(function(){
 	$('#h-menu a').click(function(){
 		$('#menu-btn').removeAttr("checked").prop("checked",false).change();
 	});
+	$('#h-menu .modal').click(function(){
+		$('#menu-btn').removeAttr("checked").prop("checked",false).change();
+	});
+
+	$('#menu-btn').change(function(){
+		if($('#menu-btn').prop("checked")){
+			$('#h-menu label div').html('CLOSE');
+		}else{
+			$('#h-menu label div').html('MENU');
+		}
+
+	});
 });
