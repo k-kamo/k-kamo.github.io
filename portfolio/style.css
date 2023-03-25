@@ -23,6 +23,7 @@ section h2{
 }
 #hero img{
 	width: 100%;
+	max-height: 380px;
 	object-fit: cover;
 	object-position: 10% 16%;
 }
@@ -40,6 +41,17 @@ section h2{
 	right: 20px;
 	bottom: 8px;
 }
+@media screen and (max-width:600px){
+	#hero p{
+		bottom: 70px;
+		right: 6px;
+	}
+	#hero p:last-child{
+		bottom: 68px;
+		right: 8px;
+	}
+}
+
 #cards{
 	display: flex;
 	flex-wrap: wrap;
