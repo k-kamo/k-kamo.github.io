@@ -19,6 +19,26 @@ section h2{
 	background: #ccc;
 	max-width: 940px;
 	height: 340px;
+	position: relative;
+}
+#hero img{
+	width: 100%;
+	object-fit: cover;
+	object-position: 10% 16%;
+}
+#hero p{
+	font-size: 32px;
+	font-weight: bold;
+	color: rgba(255,255,255,.7);
+	position: absolute;
+	right: 18px;
+	bottom: 18px;
+}
+#hero p:last-child{
+	font-size: 12px;
+	font-weight: normal;
+	right: 20px;
+	bottom: 8px;
 }
 #cards{
 	display: flex;
