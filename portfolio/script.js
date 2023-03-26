@@ -3,6 +3,7 @@ $(function(){
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 180){
 			$('.pagetop').fadeIn();
+			$('#menu-btn').removeAttr("checked").prop("checked",false).change();
 		}else{
 			$('.pagetop').fadeOut();
 		}
