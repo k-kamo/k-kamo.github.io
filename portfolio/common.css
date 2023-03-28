@@ -215,8 +215,12 @@ footer{
 		text-decoration: none;
 		text-transform: uppercase;
 		border-bottom: 1px solid #888;
-		font-weight: bold;
 		color: black;
+		font-size: 12px;
+	}
+	#h-menu ul li a:first-line{
+		font-size: 16px;
+		font-weight: bold;
 	}
 	#h-menu ul li:last-child a{
 		border-bottom: none;
@@ -231,7 +235,7 @@ footer{
 		display: block;
 	}
 	#h-menu input:checked~ ul{
-		max-height: 338px;
+		max-height: 438px;
 		transition: max-height .6s;
 	}
 	#h-menu input:checked~ label span{
