@@ -235,7 +235,7 @@ footer{
 		display: block;
 	}
 	#h-menu input:checked~ ul{
-		max-height: 438px;
+		max-height: 458px;
 		transition: max-height .6s;
 	}
 	#h-menu input:checked~ label span{
