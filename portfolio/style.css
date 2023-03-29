@@ -50,6 +50,21 @@ section h2{
 		right: 6px;
 	}
 }
+h2{
+	text-decoration: underline 2px solid rgba(190,190,210,.8); 
+	text-underline-offset: 4px;
+}
+h2::before{
+	content: '';
+	display: inline-block;
+	height: 12px;
+	background: #334;
+	margin-right: 10px;
+	padding-left: 12px;
+	border-radius: 4px;
+	position: relative;
+	top: -3px;
+}
 
 #cards{
 	display: flex;
