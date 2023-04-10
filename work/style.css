@@ -32,7 +32,7 @@ section{
 	max-width: 920px;
 	margin: 0 auto 16px;
 	background: white;
-	padding: 1px 10px 80px;
+	padding: 1px 12px 80px;
 	border-radius: 4px;
 	box-shadow: 0 0 4px rgba(160,160,160,.4);
 }
@@ -46,8 +46,7 @@ h2:first-of-type{
 	margin-top: 12px;
 }
 ul{
-	padding-left: 20px;
-	margin-left: 10px;
+	padding-left: 28px;
 }
 
 footer{
